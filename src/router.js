@@ -5,7 +5,7 @@ Vue.use(VueRouter)
 
 function load (component) {
   // '@' is aliased to src/components
-  return () => import(`@/${component}.vue`)
+  return () => System.import(`@/${component}.vue`)
 }
 
 export default new VueRouter({
